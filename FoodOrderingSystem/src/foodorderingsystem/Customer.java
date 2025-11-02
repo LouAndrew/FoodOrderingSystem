@@ -1,13 +1,13 @@
 package foodorderingsystem;
 public class Customer {
-    private int customerID;
+    private String customerID;
     private String name;
     private String email;
     private String phoneNumber;
     private String deliveryAddress;
     
     
-    public void Customer(int customerID,String name,String email,String phoneNumber,String deliveryAddress){
+    public void Customer(String customerID,String name,String email,String phoneNumber,String deliveryAddress){
     this.customerID = customerID;
     this.name = name;
     this.email = email;
@@ -15,7 +15,7 @@ public class Customer {
     this.deliveryAddress = deliveryAddress;
     }
     //getters
-    public int getCustomerID(){
+    public String getCustomerID(){
         return customerID;
     }
     public String getName(){
@@ -31,7 +31,7 @@ public class Customer {
         return deliveryAddress;
     }
     //setters
-    public void setCustomerID(int customerID){
+    public void setCustomerID(String customerID){
         this.customerID = customerID;
     }
     public void setCustomerName(String CustomerName){
