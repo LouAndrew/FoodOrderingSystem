@@ -27,7 +27,9 @@ public class LoginWindow extends javax.swing.JFrame {
         PasswordFeild = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Food Ordering System");
         setBackground(new java.awt.Color(153, 255, 0));
+        setResizable(false);
 
         FOSLabel.setBackground(new java.awt.Color(102, 0, 102));
         FOSLabel.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
@@ -176,9 +178,6 @@ public class LoginWindow extends javax.swing.JFrame {
         cs.setCustomerPhoneNumber(phoneNumber);
         cs.setCustomerDeliveryAddress(DeliveryAdd);
         cs.setCustomerID(passWord);
-        System.out.println("done");
-        String email1 = cs.getEmail();
-        System.out.println(email1);
     }//GEN-LAST:event_SubmitButtonActionPerformed
 
     public static void main(String args[]) {

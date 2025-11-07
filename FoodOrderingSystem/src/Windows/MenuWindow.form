@@ -3,9 +3,11 @@
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="title" type="java.lang.String" value="Food Ordering System"/>
     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
       <Color blue="ff" green="33" red="33" type="rgb"/>
     </Property>
+    <Property name="resizable" type="boolean" value="false"/>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
@@ -29,7 +31,102 @@
           <Group type="102" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="223" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="drink2Button" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="drink2cost" min="-2" pref="64" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="drink3Button" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="drink3cost" min="-2" pref="64" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="drink4Button" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="drink4cost" min="-2" pref="64" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="drink1Button" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="drink1cost" min="-2" pref="64" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="snack4Button" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                              <Component id="snack4cost" min="-2" pref="64" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="snack1Button" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="snack2Button" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="snack2cost" min="-2" pref="64" max="-2" attributes="0"/>
+                                  <Component id="snack1cost" min="-2" pref="64" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="snack3Button" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="snack3cost" min="-2" pref="64" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="meal2Button" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="meal2cost" min="-2" pref="64" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="meal3Button" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="meal3cost" min="-2" pref="64" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="meal4Button" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="meal4cost" min="-2" pref="64" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="meal1Button" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="meal1cost" min="-2" pref="64" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="desert4Button" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="desert4cost" min="-2" pref="64" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Component id="desert3Button" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="desert3cost" min="-2" pref="64" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Component id="desert2Button" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="desert2cost" min="-2" pref="64" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Component id="desert1Button" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="desert1cost" min="-2" pref="64" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="290" max="-2" attributes="0"/>
                       <Component id="SubmitButton" min="-2" pref="203" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
@@ -37,11 +134,17 @@
                       <Component id="MenuLabel" min="-2" pref="224" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
-                      <Component id="jScrollPane2" min="-2" pref="618" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                      <Component id="drinksLabel" min="-2" pref="129" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                      <Component id="snacksLabel" min="-2" pref="137" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
+                      <Component id="mealsLabel" min="-2" pref="157" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
+                      <Component id="desertLabel" min="-2" pref="100" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace pref="177" max="32767" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -50,11 +153,60 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
               <Component id="MenuLabel" min="-2" pref="34" max="-2" attributes="0"/>
-              <EmptySpace pref="35" max="32767" attributes="0"/>
-              <Component id="jScrollPane2" min="-2" pref="106" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="244" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="drinksLabel" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+                  <Component id="snacksLabel" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+                  <Component id="mealsLabel" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+                  <Component id="desertLabel" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="46" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="drink1Button" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="snack1Button" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="meal1Button" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="desert1Button" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="drink1cost" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="snack1cost" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="meal1cost" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="desert1cost" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="drink2Button" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="snack2Button" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="meal2Button" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="desert2Button" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="drink2cost" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="snack2cost" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="meal2cost" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="desert2cost" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="drink3Button" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="snack3Button" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="meal3Button" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="desert3Button" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="drink3cost" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="snack3cost" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="meal3cost" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="desert3cost" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="snack4Button" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="drink4Button" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="meal4Button" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="desert4Button" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="drink4cost" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="snack4cost" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="meal4cost" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="desert4cost" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="92" max="-2" attributes="0"/>
               <Component id="SubmitButton" min="-2" pref="51" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -76,82 +228,349 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Submit"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SubmitButtonActionPerformed"/>
+      </Events>
     </Component>
-    <Container class="javax.swing.JScrollPane" name="jScrollPane2">
-      <AuxValues>
-        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
-      </AuxValues>
-
-      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-      <SubComponents>
-        <Component class="javax.swing.JTable" name="MenuTable">
-          <Properties>
-            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-              <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
-                <BevelBorder/>
-              </Border>
-            </Property>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Berlin Sans FB" size="12" style="0"/>
-            </Property>
-            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-              <Table columnCount="8" rowCount="4">
-                <Column editable="true" title="Drinks" type="java.lang.String">
-                  <Data value="Cocacola"/>
-                  <Data value="Sprite"/>
-                  <Data value="Water"/>
-                  <Data value="Fanta"/>
-                </Column>
-                <Column editable="true" title="Price" type="java.lang.Double">
-                  <Data value="2000.0"/>
-                  <Data value="2300.0"/>
-                  <Data value="1500.0"/>
-                  <Data value="2000.0"/>
-                </Column>
-                <Column editable="true" title="Snacks" type="java.lang.String">
-                  <Data value="Crisps"/>
-                  <Data value="Gonja"/>
-                  <Data value="Groundnuts"/>
-                  <Data value="Oreos"/>
-                </Column>
-                <Column editable="true" title="Price" type="java.lang.Double">
-                  <Data value="3000.0"/>
-                  <Data value="5000.0"/>
-                  <Data value="6000.0"/>
-                  <Data value="5600.0"/>
-                </Column>
-                <Column editable="true" title="Meals" type="java.lang.String">
-                  <Data value="Fish &amp; chips"/>
-                  <Data value="Pilau"/>
-                  <Data value="Matooke "/>
-                  <Data value="Pork chops"/>
-                </Column>
-                <Column editable="true" title="Price" type="java.lang.Double">
-                  <Data value="15000.0"/>
-                  <Data value="10000.0"/>
-                  <Data value="9000.0"/>
-                  <Data value="20000.0"/>
-                </Column>
-                <Column editable="true" title="Deserts" type="java.lang.String">
-                  <Data value="Yoghurt"/>
-                  <Data value="Ice cream"/>
-                  <Data value="Fruit pie"/>
-                  <Data value="Asian Jelly"/>
-                </Column>
-                <Column editable="true" title="Price" type="java.lang.Double">
-                  <Data value="4500.0"/>
-                  <Data value="7000.0"/>
-                  <Data value="30000.0"/>
-                  <Data value="5600.0"/>
-                </Column>
-              </Table>
-            </Property>
-            <Property name="gridColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="99" red="ff" type="rgb"/>
-            </Property>
-          </Properties>
-        </Component>
-      </SubComponents>
-    </Container>
+    <Component class="javax.swing.JRadioButton" name="drink1Button">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Cocacola"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="drink1ButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="drink2Button">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Sprite"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="drink2ButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="drink3Button">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Water"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="drink3ButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="drink4Button">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Fanta"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="drink4ButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="snack1Button">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Crisps"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="snack1ButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="snack2Button">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Gonja"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="snack2ButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="snack3Button">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Groundnuts"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="snack3ButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="snack4Button">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Oreos"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="snack4ButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="meal1Button">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Fish &amp; Chips"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="meal1ButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="meal2Button">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Pilau"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="meal2ButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="meal3Button">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Matooke"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="meal3ButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="meal4Button">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Pork chops"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="meal4ButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="desert1Button">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Yoghurt"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="desert1ButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="desert2Button">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Ice cream"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="desert2ButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="desert3Button">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Fruit pie"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="desert3ButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="desert4Button">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Asian jelly"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="desert4ButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="drink1cost">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB" size="12" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="UGX 2000"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="drink2cost">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB" size="12" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="UGX 2300"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="drink3cost">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB" size="12" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="UGX 1500"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="drink4cost">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB" size="12" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="UGX 2000"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="snack1cost">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB" size="12" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="UGX 3000"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="snack2cost">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB" size="12" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="UGX 5000"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="snack3cost">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB" size="12" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="UGX 6000"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="snack4cost">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB" size="12" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="UGX 5600"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="meal1cost">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB" size="12" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="UGX 15000"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="meal2cost">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB" size="12" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="UGX 10000"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="meal3cost">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB" size="12" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="UGX 9000"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="meal4cost">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB" size="12" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="UGX 20000"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="desert1cost">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB" size="12" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="UGX 4500"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="desert2cost">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB" size="12" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="UGX 7000"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="desert3cost">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB" size="12" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="UGX 30000"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="desert4cost">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB" size="12" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="UGX 5600"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="drinksLabel">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB" size="18" style="0"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="text" type="java.lang.String" value="DRINKS"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="snacksLabel">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB" size="18" style="0"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="text" type="java.lang.String" value="SNACKS"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="mealsLabel">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB" size="18" style="0"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="text" type="java.lang.String" value="MEALS"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="desertLabel">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Berlin Sans FB" size="18" style="0"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="text" type="java.lang.String" value="DESERT"/>
+      </Properties>
+    </Component>
   </SubComponents>
 </Form>

@@ -38,6 +38,8 @@ public class CheckOutWindow extends javax.swing.JFrame {
         totalFeild = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Food Ordering System");
+        setResizable(false);
 
         checkOutLabel.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
         checkOutLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
