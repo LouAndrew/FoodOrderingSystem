@@ -46,7 +46,7 @@ public class Customer {
     public void setCustomerDeliveryAddress(String customerDeliveryAddress){
         this.deliveryAddress = customerDeliveryAddress;
     }
-    public void printAllInfo(){
+    public void insertIntoDB(){
         System.out.println(this.name+"\n"+this.deliveryAddress+"\n"+this.email+"\n"+this.phoneNumber);
     }
 }

@@ -125,7 +125,7 @@ public class OrderProgress extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void ExitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ExitButtonActionPerformed
-        // TODO add your handling code here:
+       this.dispose();
     }//GEN-LAST:event_ExitButtonActionPerformed
 
     /**

@@ -415,7 +415,7 @@ public class MenuWindow extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-    String[] menuItems = new String[17];
+    static String[] menuItems = new String[17];
     private static int num = 0;
     private static int TotalCost = 0;
     private void drink1ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_drink1ButtonActionPerformed
@@ -619,11 +619,16 @@ public class MenuWindow extends javax.swing.JFrame {
             }
             no = no + 1;
         }
+        CheckOutWindow checkout = new CheckOutWindow();
+        checkout.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_SubmitButtonActionPerformed
-
-    /**
-     * @param args the command line arguments
-     */
+    public static String[] DisplayMenuItems(){
+        return menuItems;
+    }
+    public static int DisplayTotalPrice(){
+        return TotalCost;
+    }
     public static void main(String args[]) {
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {

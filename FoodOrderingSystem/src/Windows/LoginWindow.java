@@ -1,6 +1,7 @@
 package Windows;
 
 import foodorderingsystem.Customer;
+import javax.swing.JOptionPane;
 
 public class LoginWindow extends javax.swing.JFrame {
     
@@ -178,6 +179,14 @@ public class LoginWindow extends javax.swing.JFrame {
         cs.setCustomerPhoneNumber(phoneNumber);
         cs.setCustomerDeliveryAddress(DeliveryAdd);
         cs.setCustomerID(passWord);
+        if (!email.isEmpty() && !Username.isEmpty() && !phoneNumber.isEmpty() && !DeliveryAdd.isEmpty() && !passWord.isEmpty()){
+            cs.insertIntoDB();
+            MenuWindow menu = new MenuWindow();
+            menu.setVisible(true);
+            this.dispose();
+        }else {
+        JOptionPane.showMessageDialog(this, "Feilds are empty!", "Login Error", JOptionPane.ERROR_MESSAGE);
+        }   
     }//GEN-LAST:event_SubmitButtonActionPerformed
 
     public static void main(String args[]) {

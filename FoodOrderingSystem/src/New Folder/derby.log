@@ -1,0 +1,111 @@
+Sun Nov 09 22:07:53 EAT 2025 : Apache Derby Network Server - 10.17.1.0 - (1913217) started and ready to accept connections on port 1527
+----------------------------------------------------------------
+Sun Nov 09 22:08:24 EAT 2025:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.17.1.0 - (1913217): instance a816c00e-019a-6a04-76a5-ffff91683b4f 
+on database directory D:\le stuff\FoodOrderingSystem\FoodOrderingSystem\src\New Folder\test with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@11a4022a 
+Loaded from file:/C:/Program%20Files/Apache%20NetBeans/java/db-derby-10.17.1.0-lib/db-derby-10.17.1.0-lib/lib/derby.jar
+java.vendor=Azul Systems, Inc.
+java.runtime.version=24.0.1+9
+user.dir=C:\Program Files\Apache NetBeans\java\db-derby-10.17.1.0-lib\db-derby-10.17.1.0-lib
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=D:\le stuff\FoodOrderingSystem\FoodOrderingSystem\src\New Folder
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Sun Nov 09 22:08:52 EAT 2025:
+Shutting down instance a816c00e-019a-6a04-76a5-ffff91683b4f on database directory D:\le stuff\FoodOrderingSystem\FoodOrderingSystem\src\New Folder\test with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@11a4022a 
+Sun Nov 09 22:08:52 EAT 2025 Thread[#32,DRDAConnThread_3,5,main] (DATABASE = test), (DRDAID = {2}), Database 'test' shutdown.
+----------------------------------------------------------------
+Sun Nov 09 22:52:58 EAT 2025:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.17.1.0 - (1913217): instance 97e00100-019a-6a04-76a5-ffff91683b4f 
+on database directory D:\le stuff\FoodOrderingSystem\FoodOrderingSystem\src\New Folder\test with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@11a4022a 
+Loaded from file:/C:/Program%20Files/Apache%20NetBeans/java/db-derby-10.17.1.0-lib/db-derby-10.17.1.0-lib/lib/derby.jar
+java.vendor=Azul Systems, Inc.
+java.runtime.version=24.0.1+9
+user.dir=C:\Program Files\Apache NetBeans\java\db-derby-10.17.1.0-lib\db-derby-10.17.1.0-lib
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=D:\le stuff\FoodOrderingSystem\FoodOrderingSystem\src\New Folder
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Sun Nov 09 23:16:07 EAT 2025:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.17.1.0 - (1913217): instance cddec133-019a-6a04-76a5-ffff91683b4f 
+on database directory D:\le stuff\FoodOrderingSystem\FoodOrderingSystem\src\New Folder\FoodOrderingsys with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@11a4022a 
+Loaded from file:/C:/Program%20Files/Apache%20NetBeans/java/db-derby-10.17.1.0-lib/db-derby-10.17.1.0-lib/lib/derby.jar
+java.vendor=Azul Systems, Inc.
+java.runtime.version=24.0.1+9
+user.dir=C:\Program Files\Apache NetBeans\java\db-derby-10.17.1.0-lib\db-derby-10.17.1.0-lib
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=D:\le stuff\FoodOrderingSystem\FoodOrderingSystem\src\New Folder
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Sun Nov 09 23:16:25 EAT 2025:
+Shutting down instance cddec133-019a-6a04-76a5-ffff91683b4f on database directory D:\le stuff\FoodOrderingSystem\FoodOrderingSystem\src\New Folder\FoodOrderingsys with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@11a4022a 
+Sun Nov 09 23:16:26 EAT 2025 Thread[#35,DRDAConnThread_4,5,main] (DATABASE = FoodOrderingsys), (DRDAID = {5}), Database 'FoodOrderingsys' shutdown.
+----------------------------------------------------------------
+Sun Nov 09 23:17:34 EAT 2025:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.17.1.0 - (1913217): instance d2e68225-019a-6a04-76a5-ffff91683b4f 
+on database directory D:\le stuff\FoodOrderingSystem\FoodOrderingSystem\src\New Folder\FoodOrderingsys with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@11a4022a 
+Loaded from file:/C:/Program%20Files/Apache%20NetBeans/java/db-derby-10.17.1.0-lib/db-derby-10.17.1.0-lib/lib/derby.jar
+java.vendor=Azul Systems, Inc.
+java.runtime.version=24.0.1+9
+user.dir=C:\Program Files\Apache NetBeans\java\db-derby-10.17.1.0-lib\db-derby-10.17.1.0-lib
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=D:\le stuff\FoodOrderingSystem\FoodOrderingSystem\src\New Folder
+Database Class Loader started - derby.database.classpath=''
+Sun Nov 09 23:18:05 EAT 2025 Thread[#35,DRDAConnThread_4,5,main] (XID = 246), (SESSIONID = 2), (DATABASE = test), (DRDAID = {7}), Cleanup action starting
+java.sql.SQLNonTransientConnectionException: Connection authentication failure occurred.  Reason: Invalid authentication..
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(SQLExceptionFactory.java:81)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(SQLExceptionFactory.java:141)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Util.java:225)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Util.java:220)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(EmbedConnection.java:3208)
+	at org.apache.derby.impl.jdbc.EmbedConnection.checkUserCredentials(EmbedConnection.java:1315)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(EmbedConnection.java:445)
+	at org.apache.derby.iapi.jdbc.InternalDriver.getNewEmbedConnection(InternalDriver.java:629)
+	at org.apache.derby.iapi.jdbc.InternalDriver.connect(InternalDriver.java:295)
+	at org.apache.derby.iapi.jdbc.InternalDriver.connect(InternalDriver.java:921)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(EmbeddedDriver.java:125)
+	at org.apache.derby.impl.drda.Database.makeConnection(Database.java:253)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(DRDAConnThread.java:1474)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(DRDAConnThread.java:1424)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(DRDAConnThread.java:3378)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(DRDAConnThread.java:1208)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(DRDAConnThread.java:1008)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(DRDAConnThread.java:298)
+Caused by: ERROR 08004: Connection authentication failure occurred.  Reason: Invalid authentication..
+	at org.apache.derby.shared.common.error.StandardException.newException(StandardException.java:299)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(SQLExceptionFactory.java:170)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(SQLExceptionFactory.java:75)
+	... 17 more
+============= begin nested exception, level (1) ===========
+ERROR 08004: Connection authentication failure occurred.  Reason: Invalid authentication..
+	at org.apache.derby.shared.common.error.StandardException.newException(StandardException.java:299)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(SQLExceptionFactory.java:170)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(SQLExceptionFactory.java:75)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(SQLExceptionFactory.java:141)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Util.java:225)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Util.java:220)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(EmbedConnection.java:3208)
+	at org.apache.derby.impl.jdbc.EmbedConnection.checkUserCredentials(EmbedConnection.java:1315)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(EmbedConnection.java:445)
+	at org.apache.derby.iapi.jdbc.InternalDriver.getNewEmbedConnection(InternalDriver.java:629)
+	at org.apache.derby.iapi.jdbc.InternalDriver.connect(InternalDriver.java:295)
+	at org.apache.derby.iapi.jdbc.InternalDriver.connect(InternalDriver.java:921)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(EmbeddedDriver.java:125)
+	at org.apache.derby.impl.drda.Database.makeConnection(Database.java:253)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(DRDAConnThread.java:1474)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(DRDAConnThread.java:1424)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(DRDAConnThread.java:3378)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(DRDAConnThread.java:1208)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(DRDAConnThread.java:1008)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(DRDAConnThread.java:298)
+============= end nested exception, level (1) ===========
+Cleanup action completed
+Sun Nov 09 23:18:05 EAT 2025 Thread[#35,DRDAConnThread_4,5,main] (DATABASE = test), (DRDAID = {7}), Connection authentication failure occurred.  Reason: Invalid authentication..
