@@ -5,8 +5,12 @@ import javax.swing.JOptionPane;
 
 public class LoginWindow extends javax.swing.JFrame {
     
+    public static String name;
+    public static String deliveryAddress;
+    
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(LoginWindow.class.getName());
     public LoginWindow() {
+        
         initComponents();
     }
     @SuppressWarnings("unchecked")
@@ -179,6 +183,8 @@ public class LoginWindow extends javax.swing.JFrame {
         cs.setCustomerPhoneNumber(phoneNumber);
         cs.setCustomerDeliveryAddress(DeliveryAdd);
         cs.setCustomerID(passWord);
+        name = UserNameFeild.getText();
+        deliveryAddress = DeliveryAddressFeild.getText();
         if (!email.isEmpty() && !Username.isEmpty() && !phoneNumber.isEmpty() && !DeliveryAdd.isEmpty() && !passWord.isEmpty()){
             cs.insertIntoDB();
             MenuWindow menu = new MenuWindow();
@@ -209,18 +215,18 @@ public class LoginWindow extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField DeliveryAddressFeild;
+    private static javax.swing.JTextField DeliveryAddressFeild;
     private javax.swing.JLabel DeliveryAddressLabel;
-    private javax.swing.JTextField EmailFeild;
+    private static javax.swing.JTextField EmailFeild;
     private javax.swing.JLabel EmailLabel;
     private javax.swing.JLabel FOSLabel;
     private javax.swing.JLabel LoginDetailsLabel;
     private javax.swing.JLabel PassWordLabel;
-    private javax.swing.JTextField PasswordFeild;
-    private javax.swing.JTextField PhoneNumberField;
+    private static javax.swing.JTextField PasswordFeild;
+    private static javax.swing.JTextField PhoneNumberField;
     private javax.swing.JLabel PhoneNumberLabel;
     private javax.swing.JButton SubmitButton;
-    private javax.swing.JTextField UserNameFeild;
+    private static javax.swing.JTextField UserNameFeild;
     private javax.swing.JLabel UserNameLabel;
     // End of variables declaration//GEN-END:variables
 }

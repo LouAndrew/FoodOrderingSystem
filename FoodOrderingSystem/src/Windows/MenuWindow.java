@@ -3,9 +3,7 @@ public class MenuWindow extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(MenuWindow.class.getName());
 
-    /**
-     * Creates new form MenuWindow
-     */
+
     public MenuWindow() {
         initComponents();
     }
@@ -418,6 +416,8 @@ public class MenuWindow extends javax.swing.JFrame {
     static String[] menuItems = new String[17];
     private static int num = 0;
     private static int TotalCost = 0;
+    public static String orderType;
+    public static int TotalAmount;
     private void drink1ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_drink1ButtonActionPerformed
         String item = drink1Button.getText();
         int drink1cost = 2000;
@@ -611,23 +611,34 @@ public class MenuWindow extends javax.swing.JFrame {
     }//GEN-LAST:event_desert4ButtonActionPerformed
 
     private void SubmitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SubmitButtonActionPerformed
-        int no = 1;
-        System.out.println(TotalCost);
+        int no = 0;
+        int Copynum = 0;
+        String[] menuItemsCopy = new String[17];
+        TotalAmount = TotalCost;
+        
         while (no<menuItems.length){
             if (menuItems[no] != null){
-                System.out.println(menuItems[no]);
+                menuItemsCopy[Copynum] = menuItems[no];
+                Copynum += 1;
             }
             no = no + 1;
         }
-        CheckOutWindow checkout = new CheckOutWindow();
-        checkout.setVisible(true);
-        this.dispose();
+        if (Copynum <= 3){
+            orderType = "Small order 1 to 3 items.";
+        }else if(Copynum <= 9){
+            orderType = "Medium order 4 to 9 items.";
+        }else if(Copynum >= 10){
+            orderType = "Large order 10 items and above.";
+        }
+        if (Copynum != 0){
+            CheckOutWindow checkout = new CheckOutWindow();
+            checkout.setVisible(true);
+            this.dispose();
+        }
+        
     }//GEN-LAST:event_SubmitButtonActionPerformed
     public static String[] DisplayMenuItems(){
         return menuItems;
-    }
-    public static int DisplayTotalPrice(){
-        return TotalCost;
     }
     public static void main(String args[]) {
         try {

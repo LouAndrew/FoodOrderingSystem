@@ -5,6 +5,10 @@ public class OrderProgress extends javax.swing.JFrame {
 
     public OrderProgress() {
         initComponents();
+          UserNameFeild.setText(LoginWindow.name);
+          DeliveryAddressFeild.setText(LoginWindow.deliveryAddress);
+          GrandTotalFeild.setText("UGX "+CheckOutWindow.TotalPrice);
+          OrderStatusFeild.setText("PENDING");
     }
 
     @SuppressWarnings("unchecked")
@@ -50,49 +54,49 @@ public class OrderProgress extends javax.swing.JFrame {
         OrderProgressLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         OrderProgressLabel.setText("Order progress");
 
-        UserNameFeild.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        UserNameFeild.setFont(new java.awt.Font("Berlin Sans FB", 0, 20)); // NOI18N
 
-        DeliveryAddressFeild.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        DeliveryAddressFeild.setFont(new java.awt.Font("Berlin Sans FB", 0, 20)); // NOI18N
 
-        OrderStatusFeild.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        OrderStatusFeild.setFont(new java.awt.Font("Berlin Sans FB", 0, 20)); // NOI18N
 
-        GrandTotalFeild.setFont(new java.awt.Font("Berlin Sans FB", 0, 18)); // NOI18N
+        GrandTotalFeild.setFont(new java.awt.Font("Berlin Sans FB", 0, 20)); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(78, 78, 78)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(UserNameLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 158, Short.MAX_VALUE)
+                        .addGap(324, 324, 324))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(DeliveryAddressLabel)
+                                .addGap(18, 18, 18)
+                                .addComponent(DeliveryAddressFeild, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(GrandTotalLabel)
+                                    .addComponent(OrderStatusLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(36, 36, 36)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(OrderStatusFeild, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(GrandTotalFeild, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(UserNameFeild, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGap(0, 0, Short.MAX_VALUE))))
+            .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(233, 233, 233)
                         .addComponent(ExitButton, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(78, 78, 78)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(UserNameLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(UserNameFeild, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(OrderStatusLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(OrderStatusFeild, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(GrandTotalLabel)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(GrandTotalFeild, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(DeliveryAddressLabel)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(DeliveryAddressFeild, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGap(0, 0, Short.MAX_VALUE))))
-                    .addGroup(layout.createSequentialGroup()
                         .addGap(210, 210, 210)
                         .addComponent(OrderProgressLabel)))
-                .addGap(158, 158, 158))
+                .addGap(126, 126, 126))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -132,10 +136,7 @@ public class OrderProgress extends javax.swing.JFrame {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        UserNameFeild.setText("hj");
-        DeliveryAddressFeild.setText("fhcdjx");
-        GrandTotalFeild.setText("vds");
-        OrderStatusFeild.setText("feds");
+      
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {

@@ -1,4 +1,6 @@
 package foodorderingsystem;
+
+
 public class Customer {
     private String customerID;
     private String name;
@@ -47,7 +49,7 @@ public class Customer {
         this.deliveryAddress = customerDeliveryAddress;
     }
     public void insertIntoDB(){
-        System.out.println(this.name+"\n"+this.deliveryAddress+"\n"+this.email+"\n"+this.phoneNumber);
+   
     }
 }
 
