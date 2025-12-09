@@ -1,14 +1,25 @@
 package Windows;
+
+import java.util.Timer;
+import java.util.TimerTask;
+
 public class OrderProgress extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(OrderProgress.class.getName());
 
     public OrderProgress() {
         initComponents();
-          UserNameFeild.setText(LoginWindow.name);
-          DeliveryAddressFeild.setText(LoginWindow.deliveryAddress);
+        if (RegisterWindow.name == null){
+            UserNameFeild.setText(LoginWindow.name);
+            DeliveryAddressFeild.setText(LoginWindow.deliveryAddress);
+        }else if(LoginWindow.name == null){
+            UserNameFeild.setText(RegisterWindow.name);
+            DeliveryAddressFeild.setText(RegisterWindow.deliveryAddress);
+        }
+          
           GrandTotalFeild.setText("UGX "+CheckOutWindow.TotalPrice);
           OrderStatusFeild.setText("PENDING");
+          updateStatus();
     }
 
     @SuppressWarnings("unchecked")
@@ -104,9 +115,9 @@ public class OrderProgress extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(OrderProgressLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(29, 29, 29)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(UserNameLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(UserNameFeild, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(UserNameFeild, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(UserNameLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(48, 48, 48)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(GrandTotalLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -128,28 +139,21 @@ public class OrderProgress extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void updateStatus(){
+        Timer timer = new Timer();
+        
+        timer.schedule(new TimerTask(){
+           @Override
+           public void run(){
+               OrderStatusFeild.setText("DELIVERED");
+           }
+        },3000);
+    }
+    
     private void ExitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ExitButtonActionPerformed
        this.dispose();
     }//GEN-LAST:event_ExitButtonActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-      
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ReflectiveOperationException | javax.swing.UnsupportedLookAndFeelException ex) {
-            logger.log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        
-        java.awt.EventQueue.invokeLater(() -> new OrderProgress().setVisible(true));
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private static javax.swing.JLabel DeliveryAddressFeild;

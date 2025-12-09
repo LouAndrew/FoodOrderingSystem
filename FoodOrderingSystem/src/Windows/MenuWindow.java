@@ -1,4 +1,7 @@
 package Windows;
+
+import foodorderingsystem.Order;
+
 public class MenuWindow extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(MenuWindow.class.getName());
@@ -631,6 +634,11 @@ public class MenuWindow extends javax.swing.JFrame {
             orderType = "Large order 10 items and above.";
         }
         if (Copynum != 0){
+            Order od = new Order();
+            od.SetOrderType(orderType);
+            od.setOrderStatus("PENDING");
+            od.setTotalAmount(TotalAmount);
+            od.InsertIntoDB(1,1,orderType,TotalAmount,"PENDING");
             CheckOutWindow checkout = new CheckOutWindow();
             checkout.setVisible(true);
             this.dispose();
@@ -639,19 +647,6 @@ public class MenuWindow extends javax.swing.JFrame {
     }//GEN-LAST:event_SubmitButtonActionPerformed
     public static String[] DisplayMenuItems(){
         return menuItems;
-    }
-    public static void main(String args[]) {
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ReflectiveOperationException | javax.swing.UnsupportedLookAndFeelException ex) {
-            logger.log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        java.awt.EventQueue.invokeLater(() -> new MenuWindow().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
